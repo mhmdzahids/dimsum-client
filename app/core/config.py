@@ -19,11 +19,13 @@ class Config:
         )
     SECRET_KEY = _raw_secret
 
-    _raw_db = os.environ.get('DATABASE_URL', 'postgresql+psycopg://localhost/dimsum_dev')
+    _raw_db = os.environ.get('DATABASE_URL', '')
+    if not _raw_db:
+        _raw_db = 'sqlite:///dimsum_dev.db' if ENV == 'development' else 'postgresql+psycopg://localhost/dimsum_dev'
     if _raw_db.startswith(('postgres://', 'postgresql://')):
         _raw_db = 'postgresql+psycopg://' + _raw_db.split('://', 1)[1]
-    if not _raw_db.startswith('postgresql+psycopg://'):
-        raise RuntimeError('DATABASE_URL must use PostgreSQL')
+    if ENV == 'production' and not _raw_db.startswith('postgresql+psycopg://'):
+        raise RuntimeError('DATABASE_URL must use PostgreSQL in production')
     DATABASE_URL = _raw_db
 
     ALLOWED_ORIGINS = os.environ.get('ALLOWED_ORIGINS', 'http://localhost:5173,http://127.0.0.1:5173').split(',')

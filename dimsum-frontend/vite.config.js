@@ -9,6 +9,7 @@ export default defineConfig({
     react()
   ],
   server: {
+    allowedHosts: true,
     headers: {
       'Referrer-Policy': 'no-referrer',
       'X-Content-Type-Options': 'nosniff',
