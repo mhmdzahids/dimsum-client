@@ -1,0 +1,52 @@
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+*.env
+.venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+dimsum_dev.db
+dimsum_test.db
+
+# Testing
+.pytest_cache/
+
+# Node / Frontend build artifacts
+node_modules/
+dist/
+dist-ssr/
+*.local
+dimsum-frontend/node_modules/
+dimsum-frontend/dist/
+dimsum-frontend/.env
+dimsum-frontend/.env.*
+!dimsum-frontend/.env.example
+
+# Uploads / Static files
+uploads/
+app/static/uploads/
+
+# IDEs & System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Ignore scratch scripts & logs
+migrate_*.py
+backfill_*.py
+*.log
+logs/

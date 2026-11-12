@@ -1,0 +1,47 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+
+# Production build outputs
+dist/
+dist-ssr/
+
+# Environment variables & secrets
+*.local
+.env
+.env.*
+!.env.example
+*.env
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Scratch & Screenshots
+scratch/
+screenshot*.png
+chunk_*.txt
+patch_*.cjs
+
+# Documentation files & test notes
+*.md
+!README.md
+*.txt
+!public/robots.txt
+*.cjs

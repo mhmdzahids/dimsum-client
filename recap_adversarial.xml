@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <!-- Kop Perusahaan -->
+  <Style ss:ID="CompanyKop">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" ss:Size="14" ss:Color="#1E3A5F" ss:Bold="1"/>
+   <Interior ss:Color="#E9ECEF" ss:Pattern="Solid"/>
+  </Style>
+  <!-- Sub-Kop Info -->
+  <Style ss:ID="MetaLabel">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" ss:Size="10" ss:Color="#495057" ss:Italic="1"/>
+  </Style>
+  <!-- Header Kolom Tabel -->
+  <Style ss:ID="TableHeader">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#2C3E50"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#2C3E50"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#2C3E50"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#2C3E50"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#3A6B80" ss:Pattern="Solid"/>
+  </Style>
+  <!-- Baris Data Genap -->
+  <Style ss:ID="DataLeft">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="10" ss:Color="#212529"/>
+  </Style>
+  <Style ss:ID="DataCenter">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="10" ss:Color="#212529"/>
+  </Style>
+  <Style ss:ID="DataRight">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="10" ss:Color="#212529"/>
+  </Style>
+  <!-- Baris Total / Ringkasan -->
+  <Style ss:ID="TotalRowLeft">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3" ss:Color="#3A6B80"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#3A6B80"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#3A6B80"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#3A6B80"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#1E3A5F" ss:Bold="1"/>
+   <Interior ss:Color="#F5F1EB" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="TotalRowRight">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3" ss:Color="#3A6B80"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#3A6B80"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#3A6B80"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#3A6B80"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#1E3A5F" ss:Bold="1"/>
+   <Interior ss:Color="#F5F1EB" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Inbound Supplier">
+  <Table ss:DefaultRowHeight="20">
+   <Column ss:AutoFitWidth="0" ss:Width="40"/>
+   <Column ss:AutoFitWidth="0" ss:Width="110"/>
+   <Column ss:AutoFitWidth="0" ss:Width="90"/>
+   <Column ss:AutoFitWidth="0" ss:Width="180"/>
+   <Column ss:AutoFitWidth="0" ss:Width="75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="70"/>
+   <Column ss:AutoFitWidth="0" ss:Width="150"/>
+   <Column ss:AutoFitWidth="0" ss:Width="140"/>
+   <Column ss:AutoFitWidth="0" ss:Width="160"/>
+   <Column ss:AutoFitWidth="0" ss:Width="100"/>
+   <Row ss:Height="28">
+    <Cell ss:MergeAcross="9" ss:StyleID="CompanyKop">
+     <Data ss:Type="String">PT MAKAN DIMSUM INDONESIA - PENERIMAAN BARANG SUPPLIER LUAR</Data>
+    </Cell>
+   </Row>
+   <Row ss:Height="18">
+    <Cell ss:MergeAcross="9" ss:StyleID="MetaLabel">
+     <Data ss:Type="String">Tanggal / Periode: 2026-10-01 s/d 2026-10-31</Data>
+    </Cell>
+   </Row>
+   <Row ss:Height="18">
+    <Cell ss:MergeAcross="9" ss:StyleID="MetaLabel">
+     <Data ss:Type="String">Petugas Logistik : Ayu &amp; Budi</Data>
+    </Cell>
+   </Row>
+   <Row ss:Height="18">
+    <Cell ss:MergeAcross="9" ss:StyleID="MetaLabel">
+     <Data ss:Type="String">Waktu Ekspor     : 11.43.31 WIB</Data>
+    </Cell>
+   </Row>
+   <Row ss:Height="10"/>
+   <Row ss:Height="26">
+    <Cell ss:StyleID="TableHeader"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:StyleID="TableHeader"><Data ss:Type="String">Tanggal Masuk</Data></Cell>
+    <Cell ss:StyleID="TableHeader"><Data ss:Type="String">Kategori</Data></Cell>
+    <Cell ss:StyleID="TableHeader"><Data ss:Type="String">Nama Barang</Data></Cell>
+    <Cell ss:StyleID="TableHeader"><Data ss:Type="String">Jumlah</Data></Cell>
+    <Cell ss:StyleID="TableHeader"><Data ss:Type="String">Satuan</Data></Cell>
+    <Cell ss:StyleID="TableHeader"><Data ss:Type="String">Nama Supplier</Data></Cell>
+    <Cell ss:StyleID="TableHeader"><Data ss:Type="String">No. Surat Jalan</Data></Cell>
+    <Cell ss:StyleID="TableHeader"><Data ss:Type="String">Catatan Fisik</Data></Cell>
+    <Cell ss:StyleID="TableHeader"><Data ss:Type="String">Penerima</Data></Cell>
+   </Row>
+   <Row ss:Height="22">
+    <Cell ss:StyleID="DataCenter"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="DataCenter"><Data ss:Type="String">2026-10-25</Data></Cell>
+    <Cell ss:StyleID="DataCenter"><Data ss:Type="String">KULIT &amp; TEPUNG</Data></Cell>
+    <Cell ss:StyleID="DataLeft"><Data ss:Type="String">Kulit Dimsum 9cm &lt;Special&gt; &amp; Grade &quot;A&quot;</Data></Cell>
+    <Cell ss:StyleID="DataRight"><Data ss:Type="Number">50.5</Data></Cell>
+    <Cell ss:StyleID="DataCenter"><Data ss:Type="String">BAL</Data></Cell>
+    <Cell ss:StyleID="DataLeft"><Data ss:Type="String">CV &quot;Sumber &amp; Rezeki&quot; &lt;Pusat&gt;</Data></Cell>
+    <Cell ss:StyleID="DataLeft"><Data ss:Type="String">SJ/2026/10/&lt;001&gt;&amp;EXP</Data></Cell>
+    <Cell ss:StyleID="DataLeft"><Data ss:Type="String">Kondisi fisik: Suhu &lt; 4°C &amp; segel utuh</Data></Cell>
+    <Cell ss:StyleID="DataCenter"><Data ss:Type="String">Ayu (PPIC) &amp; Opr</Data></Cell>
+   </Row>
+   <Row ss:Height="22">
+    <Cell ss:StyleID="DataCenter"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="DataCenter"><Data ss:Type="String">&apos;-</Data></Cell>
+    <Cell ss:StyleID="DataCenter"><Data ss:Type="String">&apos;-</Data></Cell>
+    <Cell ss:StyleID="DataLeft"><Data ss:Type="String">&apos;-</Data></Cell>
+    <Cell ss:StyleID="DataRight"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="DataCenter"><Data ss:Type="String">&apos;-</Data></Cell>
+    <Cell ss:StyleID="DataLeft"><Data ss:Type="String">&apos;-</Data></Cell>
+    <Cell ss:StyleID="DataLeft"><Data ss:Type="String">&apos;-</Data></Cell>
+    <Cell ss:StyleID="DataLeft"><Data ss:Type="String">&apos;-</Data></Cell>
+    <Cell ss:StyleID="DataCenter"><Data ss:Type="String">&apos;-</Data></Cell>
+   </Row>
+   <Row ss:Height="24">
+    <Cell ss:StyleID="TotalRowLeft"><Data ss:Type="String">TOTAL KUANTITAS</Data></Cell>
+    <Cell ss:StyleID="TotalRowRight"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="TotalRowRight"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="TotalRowRight"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="TotalRowRight"><Data ss:Type="Number">50.5</Data></Cell>
+    <Cell ss:StyleID="TotalRowRight"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="TotalRowRight"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="TotalRowRight"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="TotalRowRight"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="TotalRowRight"><Data ss:Type="String"></Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

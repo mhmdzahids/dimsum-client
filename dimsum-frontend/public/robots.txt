@@ -1,0 +1,6 @@
+# Robots.txt for Makan Dimsum Indonesia (Buyer Storefront)
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://makandimsum.id/sitemap.xml
